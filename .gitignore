@@ -12,9 +12,6 @@ package-lock.json
 *.swp
 *.swo
 
-# Root-level data (έχουν copies στο server/data/)
-concepts.json
-products.json
 
 # Scraper scripts (προαιρετικά - για production δεν χρειάζονται)
 scrape-cosmosport.js
