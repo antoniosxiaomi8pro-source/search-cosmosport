@@ -338,7 +338,7 @@ function render(){
   const el=document.getElementById("results");
   if(!shown.length){el.innerHTML='<div class="empty">Δεν βρέθηκαν αποτελέσματα.</div>';return;}
   el.innerHTML=shown.map(p=>{
-    const img=p.image_url||"";
+    const img=p.image||"";
     const priceHtml=p.price!=null?`<span class="price">${p.price}&euro;</span>`:"";
     const hasDesc=p.description_full&&p.description_full.length>30;
     const tags=(p.tags||[]).slice(0,10).map(t=>`<span class="tag">${esc(t)}</span>`).join("");
