@@ -1,0 +1,27 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# macOS
+.DS_Store
+*.swp
+*.swo
+
+# Root-level data (έχουν copies στο server/data/)
+concepts.json
+products.json
+
+# Scraper scripts (προαιρετικά - για production δεν χρειάζονται)
+scrape-cosmosport.js
+generate-concepts.js
+convert-concepts.js
+update-index.sh
+
+# Παλιά ΕΚΠΑ files
+DEPLOY-Railway.md
+README.md
