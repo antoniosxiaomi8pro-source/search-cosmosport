@@ -350,7 +350,7 @@ function render(){
       ? `<p class="card-desc">${esc(p.description_full.slice(0, 180))}${p.description_full.length > 180 ? '&hellip;' : ''}</p>`
       : '';
     return `<article class="card"><div class="card-img-wrap"><img class="card-img" src="${esc(img)}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="card-img-fallback">${initial}</div></div><div class="card-body">
-      <h3><a href="${esc(p.url)}" target="_blank" rel="noopener" data-id="${esc(String(p.id))}">${esc(p.title)}</a></h3>
+      <h3>${esc(p.title)}</h3>
       <div class="meta-row">${priceHtml}${hasDesc?'':'<span class="completeness">χωρίς περιγραφή</span>'}</div>
       ${descSnippet}
       <div class="tags">${scoreBadge}${tags}</div>
