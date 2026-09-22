@@ -323,7 +323,7 @@ function getResults(){
 }
 function renderAreas(){
   const a=areaCounts();
-  document.getElementById("area").innerHTML='<option value="">Όλες οι κατηγορίες</option>'+a.map(([x,c])=>`<option value="${esc(x)}">${esc(x)} (${c})</option>`).join("");
+  if(a.length>0) document.getElementById("area").innerHTML='<option value="">Όλες οι κατηγορίες</option>'+a.map(([x,c])=>`<option value="${esc(x)}">${esc(x)} (${c})</option>`).join(""); else document.getElementById("area").style.display="none";
 }
 function render(){
   const r=getResults(), shown=r.slice(0,40);
